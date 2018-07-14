@@ -1,0 +1,89 @@
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    color: #111;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.catlist {
+    display: flex;
+    justify-content: space-evenly;
+    height: 20%;
+    width: 100%;
+    list-style: none;
+}
+
+.catlist li {
+    text-align: center;
+    font-size: 2em;
+    color: lightskyblue;
+}
+
+.catlist li:focus, li:hover {
+    color: lightcoral;
+    text-decoration: underline;
+}
+
+.catlist li:hover {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: auto;
+    margin: auto;
+    height: 100%;
+}
+
+.header-canvas {
+    order: 0;
+    width: auto;
+    text-align: center;
+    display: block;
+}
+
+#img-canvas {
+    order: 1;
+    cursor: pointer;
+    width: auto;
+}
+
+#counter {
+    text-align: center;
+    order: 1;
+    font-size: 10em;
+    width: auto;
+}
+
+.admin-area {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.admin-button {
+    height: 5em;
+    width: auto;
+    font-size: 2em;
+    margin-bottom: 5%;
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+}
